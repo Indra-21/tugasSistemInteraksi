@@ -8,7 +8,12 @@ const SportsComp = () => {
 
   const getSport = async () => {
     try{
-      let res = await axios.get('https://newsapi.org/v2/top-headlines?country=id&category=sports&apiKey=805b76e7218f42e5a6775a497603e269')
+      let res = await fetch('https://sistem-interaksi.vercel.app/', {
+        method: 'POST',
+        body: {
+          'my-url' : "https://newsapi.org/v2/top-headlines?country=id&category=sports&apiKey=805b76e7218f42e5a6775a497603e269"
+        }
+      })
       setSport(res.data.articles);
     } catch (e){
       console.log(e.message);
