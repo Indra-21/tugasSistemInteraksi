@@ -1,7 +1,7 @@
 {
     "headers": [
       {
-        "source": "/api/(.*)",
+        "source": "/https://newsapi.org/v2/top-headlines?country=id&category=sports&apiKey=483b3aadca634590b4207aac4c9a94d0/(.*)",
         "headers": [
           { "key": "Access-Control-Allow-Credentials", "value": "true" },
           { "key": "Access-Control-Allow-Origin", "value": "*" },

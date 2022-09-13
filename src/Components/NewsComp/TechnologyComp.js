@@ -9,7 +9,7 @@ const TechnologyComp = () => {
   const getTechno = async () => {
     try {
       let respons = await axios.get(
-        "https://newsapi.org/v2/top-headlines?country=id&category=technology&apiKey=805b76e7218f42e5a6775a497603e269"
+        "https://newsapi.org/v2/top-headlines?country=id&category=technology&apiKey=483b3aadca634590b4207aac4c9a94d0"
       );
       setTechno(respons.data.articles);
     } catch (e) {
