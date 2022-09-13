@@ -15,6 +15,7 @@ const SportsComp = () => {
     }
   }
 
+  <script crossorigin src="https://sistem-interaksi.vercel.app/"></script>
   useEffect(() => {
     getSport()
   }, [])
