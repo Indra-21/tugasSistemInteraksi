@@ -8,7 +8,7 @@ const SportsComp = () => {
 
   const getSport = async () => {
     try{
-      let res = await axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=483b3aadca634590b4207aac4c9a94d0')
+      let res = await axios.get('https://newsapi.org/v2/top-headlines?country=id&category=sports&apiKey=805b76e7218f42e5a6775a497603e269')
       setSport(res.data.articles);
     } catch (e){
       console.log(e.message);
